@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: "Poppins", sans-serif;
+}
+
+.header-btn {
+    margin-right: 15px ;
+}
+
+.header-btn-menu {
+    display: flex; /* Центрируем содержимое кнопки */
+    align-items: center;
+    justify-content: center;
+    width: 48px; /* Фиксированная ширина кнопки */
+    height: 48px; /* Фиксированная высота кнопки */
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем рамку */
+    cursor: pointer; /* Указываем, что это интерактивный элемент */
+    transition: background-color 0.4s ease; /* Плавность изменения фона */
+    border-radius: 50%; /* Скругляем углы кнопки */
+}
+
+.header-btn-menu:hover {
+    background-color: rgba(212, 212, 212, 0.289); /* Цвет кнопки при наведении */
+}
+
+.header-btn-menu svg {
+    width: 20px; /* Размер иконки */
+    height: 20px;
+    fill: currentColor; /* Наследование цвета от текста */
+    transition: fill 0.3s ease; /* Плавность изменения цвета иконки */
+}
+
+.header-logo {
+    display: flex;
+    align-items: center; /* Центрируем логотип по вертикали */
+    margin-right: 25px; /* Отступ между логотипом и кнопкой */
+}
+
+.header-logo a {
+    display: inline-block;  /* Делаем ссылку блочной для корректного клика */
+}
+.header-logo img {
+    display: block;
+    max-height: 16px;
+    max-width: 89.33px;
+}
+
+.location-choise {
+    display: flex;
+    align-items: center; /* Центрируем логотип по вертикали */
+    margin-right: 15px;
+    
+
+}
+
+.location-choise a {
+    display: flex; /* Включаем Flexbox для содержимого ссылки */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    color: inherit; /* Наследуем цвет текста */
+}
+
+.location-choise svg {
+    display: block;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.location-choise p {
+    margin: 0; /* Убираем стандартные отступы у параграфов */
+    font-size: 14px; /* Размер текста */
+    font-weight: 500;
+}
+
+.search {
+    width: 100%; /* Занимает всю доступную ширину */
+    max-width: 600px;
+    min-width: 330px; /* Минимальная ширина */
+}
+
+.search-input {
+    display: flex;
+    align-items: center; /* Центрируем логотип по вертикали */
+    margin-right: 15px;
+    height: 36px; /* Высота блока */
+    width: 100%; /* Занимает всю доступную ширину */
+    max-width: 600px;
+    min-width: 330px; /* Минимальная ширина */
+    background-color: #e5e5e5; /* Цвет фона */
+    border-radius: 18px; /* Скругление углов */
+    box-sizing: border-box; /* Учитываем отступы и границы в ширине */
+}
+
+.search-icon {
+    display: flex;
+    margin-left: 15px;
+}
+
+.search-input-pole {
+    width: 85%; /* Занимает всю доступную ширину */
+}
+
+.search-input-pole input  {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px; /* Отступ слева */
+    font-family: "Poppins", sans-serif; /* Шрифт */
+    font-size: 14px; /* Размер текста */
+    width: 100%; /* Занимает всю доступную ширину */
+    
+}
+
+.btn-log-sign {
+    display: flex;
+    
+    
+}
