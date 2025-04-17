@@ -3,17 +3,19 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding: 10px 20px;
+    justify-content: space-between; /* Разделяем содержимое на левую и правую части */
+    height: 64px; /* Высота шапки */
+    padding: 0px 40px;
     position: fixed;
     top: 0;
     width: 100%;
+    box-sizing: border-box; /* Учитываем padding в ширине */
     z-index: 1000;
     font-family: "Poppins", sans-serif;
 }
 
 .header-btn {
-    margin-right: 15px ;
+    margin: 0 0 0 -14px; /* Отступ между кнопкой и логотипом */
 }
 
 .header-btn-menu {
@@ -27,6 +29,7 @@ header {
     cursor: pointer; /* Указываем, что это интерактивный элемент */
     transition: background-color 0.4s ease; /* Плавность изменения фона */
     border-radius: 50%; /* Скругляем углы кнопки */
+    
 }
 
 .header-btn-menu:hover {
@@ -44,6 +47,7 @@ header {
     display: flex;
     align-items: center; /* Центрируем логотип по вертикали */
     margin-right: 25px; /* Отступ между логотипом и кнопкой */
+    margin-left: 15px ;
 }
 
 .header-logo a {
@@ -58,8 +62,8 @@ header {
 .location-choise {
     display: flex;
     align-items: center; /* Центрируем логотип по вертикали */
-    margin-right: 15px;
-    
+    margin-right: 24px;
+    height: 36px; /* Фиксированная ширина блока */
 
 }
 
@@ -83,19 +87,21 @@ header {
 }
 
 .search {
-    width: 100%; /* Занимает всю доступную ширину */
-    max-width: 600px;
-    min-width: 330px; /* Минимальная ширина */
+    display: flex;
+    align-items: center; /* Центрируем логотип по вертикали */
+    height: 48px; /* Высота блока */
+    min-width: 200px; /* Минимальная ширина */
+    padding: 0 12px;
+    flex-grow: 1; /* Позволяем блоку занимать доступное пространство */
+    flex-shrink: 1; /* Позволяем блоку уменьшаться при необходимости */
 }
 
 .search-input {
     display: flex;
     align-items: center; /* Центрируем логотип по вертикали */
-    margin-right: 15px;
     height: 36px; /* Высота блока */
-    width: 100%; /* Занимает всю доступную ширину */
-    max-width: 600px;
-    min-width: 330px; /* Минимальная ширина */
+    width: 100%;
+    min-width: 200px; /* Минимальная ширина */
     background-color: #e5e5e5; /* Цвет фона */
     border-radius: 18px; /* Скругление углов */
     box-sizing: border-box; /* Учитываем отступы и границы в ширине */
@@ -107,7 +113,8 @@ header {
 }
 
 .search-input-pole {
-    width: 85%; /* Занимает всю доступную ширину */
+    display: flex;
+    width: 100%; /* Занимает всю доступную ширину */
 }
 
 .search-input-pole input  {
@@ -120,4 +127,80 @@ header {
     font-size: 14px; /* Размер текста */
     width: 100%; /* Занимает всю доступную ширину */
     
+}
+
+.cart-a-log-sign {
+    display: flex;
+    align-items: center; /* Центрируем логотип по вертикали */
+    margin-left: auto;
+    
+    height: 48px; /* Высота блока */
+}
+
+.cart {
+    display: flex; /* Центрируем содержимое кнопки */
+    align-items: center;
+    justify-content: center;
+    width: 48px; /* Фиксированная ширина кнопки */
+    height: 48px; /* Фиксированная высота кнопки */
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем рамку */
+    cursor: pointer; /* Указываем, что это интерактивный элемент */
+    transition: background-color 0.4s ease; /* Плавность изменения фона */
+    border-radius: 50%; /* Скругляем углы кнопки */
+    
+}
+
+.cart:hover {
+    background-color: rgba(212, 212, 212, 0.289); /* Цвет кнопки при наведении */
+}
+
+.btn-log-sign {
+    
+    display: flex;
+    align-items: center; /* Центрируем логотип по вертикали */
+    margin: 0 0 0 24px; /* Отступ между кнопкой и логотипом */
+}
+.button-log {
+    display: inline-flex;/* делаем флекс-контейнер */
+    justify-content: center;/* по центру по горизонтали */
+    align-items: center;/* по центру по вертикали */
+
+    width: auto;/* ширина кнопки */
+    height: 36px;/* высота кнопки */
+    box-sizing: border-box;/* Учитывает padding и border в высоте */
+    padding: 12px 12px;/* отступ сверху/снизу и слева/справа */
+    font-size: 14px;/* размер шрифта */
+    font-weight: 500;
+    background-color: transparent; /* цвет фона */
+    color: black;/* цвет текста */
+    border: none;/* убираем границу */
+    border-radius: 20px;/* скругление углов */
+    cursor: pointer;/* указатель при наведении */
+    margin: 0 16px 0 0; /* отступы */
+    flex-shrink: 0; /* Запрещаем уменьшение кнопок */
+    flex-grow: 0; /* Запрещаем растягивание кнопок */
+    text-decoration: none;
+}
+
+.button-sign {
+    display: inline-flex;/* делаем флекс-контейнер */
+    justify-content: center;/* по центру по горизонтали */
+    align-items: center;/* по центру по вертикали */
+
+    width: auto;/* ширина кнопки */
+    height: 36px;/* высота кнопки */
+    box-sizing: border-box;/* Учитывает padding и border в высоте */
+    padding: 12px 12px;/* отступ сверху/снизу и слева/справа */
+    font-size: 14px;/* размер шрифта */
+    font-weight: 500;
+    background-color: #e5e5e5; /* цвет фона */
+    color: black;/* цвет текста */
+    border: none;/* убираем границу */
+    border-radius: 20px;/* скругление углов */
+    cursor: pointer;/* указатель при наведении */
+    margin: 0 0 0 0; /* отступы */
+    flex-shrink: 0; /* Запрещаем уменьшение кнопок */
+    flex-grow: 0; /* Запрещаем растягивание кнопок */
+    text-decoration: none;
 }
